@@ -11,6 +11,10 @@ using Vec2d = Vec2T<double>;
 template< class T >
 using VecXT = Eigen::Matrix<T, -1, 1>;
 using VecXd = VecXT<double>;
+template< class T, int N >
+using VecNXT = Eigen::Matrix<T, N, 1>;
+template< int N >
+using VecNXd = VecNXT<double, N>;
 
 template< class T >
 using Mat2T = Eigen::Matrix<T, 2, 2>;
